@@ -2,6 +2,11 @@
 > Cordova plugin for [Firebase Dynamic Links](https://firebase.google.com/docs/dynamic-links/)
 
 ## This plugin is compatible to work with cordova-plugin-firebase and supports iOS 12 fix from author georgski
+
+## NOTE
+
+By default `GoogleToolboxForMac` and `nanopb` has been disabled to avoid conflicts with [Push Plugin](https://github.com/phonegap/phonegap-plugin-push)
+. In order to make them available for your project, simply uncomment `line 107-108` in `plugin.xml`. This is only needed if you are using [Push](https://github.com/phonegap/phonegap-plugin-push) or any other plugin which already includes these two dependencies.
  
 ## Installation
 
